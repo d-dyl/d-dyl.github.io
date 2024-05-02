@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+	background-color: #EEE;
+	margin: 0;
+    padding: 0;
+}
+
+#slide1 {
+	width: 100%;
+
+    padding: 0;
+}
+
+.slide {
+	border: 2px solid red;
+}
+
+h1 {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 25rem;
+    margin: 0;
+    text-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+#slide1 > .container {
+	margin: 10rem;
+	padding-left: 5rem;
+	overflow: hidden;
+	border-radius: 5rem;
+}
+
+#frontpage {
+    width: 140rem;
+	height: 70rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.panel {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    border-radius: 0 5rem 5rem 0;
+    margin-left: -5rem;
+    box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.5);
+    transition: flex 0.5s cubic-bezier(.5,0,.2,1);
+}
+
+.panel:hover {
+    flex: 1.2;
+}
+
+.panel:active {
+    flex: 2;
+}
